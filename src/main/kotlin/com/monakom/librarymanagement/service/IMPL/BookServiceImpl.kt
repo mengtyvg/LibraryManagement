@@ -77,6 +77,7 @@ class BookServiceImpl(
         val title = request.title?.trim()
         val author = request.author?.trim()
         val isbn = request.isbn?.trim()
+        val bookStatus = request.bookStatus
 
 
         if (bookRepository.existsByIsbnAndIdNot(isbn, id)) {
@@ -89,6 +90,7 @@ class BookServiceImpl(
         book.title = title
         book.author = author
         book.isbn = isbn
+        book.bookStatus = bookStatus?.name ?: book.bookStatus
 
         val updatedBook = bookRepository.save(book)
 
