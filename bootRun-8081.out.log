@@ -1,0 +1,79 @@
+> Task :checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :compileKotlin UP-TO-DATE
+> Task :compileJava NO-SOURCE
+> Task :processResources UP-TO-DATE
+> Task :classes UP-TO-DATE
+> Task :resolveMainClassName UP-TO-DATE
+
+> Task :bootRun
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v4.1.0)
+
+2026-07-02T09:20:36.784+07:00  INFO 26936 --- [librarymanagement] [           main] c.m.l.LibrarymanagementApplicationKt     : Starting LibrarymanagementApplicationKt using Java 21.0.11 with PID 26936 (C:\Users\Lenovo\Downloads\librarymanagement\librarymanagement\build\classes\kotlin\main started by Lenovo in C:\Users\Lenovo\Downloads\librarymanagement\librarymanagement)
+2026-07-02T09:20:36.788+07:00  INFO 26936 --- [librarymanagement] [           main] c.m.l.LibrarymanagementApplicationKt     : No active profile set, falling back to 1 default profile: "default"
+2026-07-02T09:20:37.616+07:00  INFO 26936 --- [librarymanagement] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-07-02T09:20:37.692+07:00  INFO 26936 --- [librarymanagement] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 65 ms. Found 1 JPA repository interface.
+2026-07-02T09:20:38.301+07:00  INFO 26936 --- [librarymanagement] [           main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8081 (http)
+2026-07-02T09:20:38.321+07:00  INFO 26936 --- [librarymanagement] [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-07-02T09:20:38.321+07:00  INFO 26936 --- [librarymanagement] [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.22]
+2026-07-02T09:20:38.400+07:00  INFO 26936 --- [librarymanagement] [           main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 1535 ms
+2026-07-02T09:20:38.733+07:00  INFO 26936 --- [librarymanagement] [           main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-07-02T09:20:38.844+07:00  INFO 26936 --- [librarymanagement] [           main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.4.1.Final
+2026-07-02T09:20:39.750+07:00  INFO 26936 --- [librarymanagement] [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-07-02T09:20:39.816+07:00  INFO 26936 --- [librarymanagement] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-07-02T09:20:40.091+07:00  INFO 26936 --- [librarymanagement] [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@1884e671
+2026-07-02T09:20:40.094+07:00  INFO 26936 --- [librarymanagement] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-07-02T09:20:40.142+07:00  WARN 26936 --- [librarymanagement] [           main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-07-02T09:20:40.177+07:00  INFO 26936 --- [librarymanagement] [           main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:5432/library]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 17.7
+	Default catalog/schema: library/public
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-07-02T09:20:41.554+07:00  INFO 26936 --- [librarymanagement] [           main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-07-02T09:20:41.654+07:00  INFO 26936 --- [librarymanagement] [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-07-02T09:20:42.254+07:00  INFO 26936 --- [librarymanagement] [           main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-07-02T09:20:43.089+07:00  WARN 26936 --- [librarymanagement] [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-07-02T09:20:43.117+07:00  INFO 26936 --- [librarymanagement] [           main] o.s.b.w.a.WelcomePageHandlerMapping      : Adding welcome page: class path resource [static/index.html]
+2026-07-02T09:20:43.612+07:00  INFO 26936 --- [librarymanagement] [           main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8081 (http) with context path '/'
+2026-07-02T09:20:43.620+07:00  INFO 26936 --- [librarymanagement] [           main] c.m.l.LibrarymanagementApplicationKt     : Started LibrarymanagementApplicationKt in 7.501 seconds (process running for 8.118)
+2026-07-02T09:20:47.497+07:00  INFO 26936 --- [librarymanagement] [nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-07-02T09:20:47.498+07:00  INFO 26936 --- [librarymanagement] [nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-07-02T09:20:47.500+07:00  INFO 26936 --- [librarymanagement] [nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+Hibernate: 
+    select
+        be1_0.id,
+        be1_0.author,
+        be1_0.created_at,
+        be1_0.isbn,
+        be1_0.status,
+        be1_0.title,
+        be1_0.updated_at 
+    from
+        books be1_0 
+    offset
+        ? rows 
+    fetch
+        first ? rows only
+Hibernate: 
+    select
+        count(be1_0.id) 
+    from
+        books be1_0
+2026-07-02T09:21:04.584+07:00  WARN 26936 --- [librarymanagement] [nio-8081-exec-6] ration$PageModule$WarningLoggingModifier : Serializing PageImpl instances as-is is not supported, meaning that there is no guarantee about the stability of the resulting JSON structure!
+	For a stable JSON structure, please use Spring Data's PagedModel (globally via @EnableSpringDataWebSupport(pageSerializationMode = VIA_DTO))
+	or Spring HATEOAS and Spring Data's PagedResourcesAssembler as documented in https://docs.spring.io/spring-data/commons/reference/repositories/core-extensions.html#core.web.pageables.
+
