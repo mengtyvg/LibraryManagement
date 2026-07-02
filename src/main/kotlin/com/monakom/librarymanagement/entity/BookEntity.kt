@@ -1,8 +1,6 @@
 package com.monakom.librarymanagement.entity
 
 import jakarta.persistence.Entity
-import jakarta.persistence.EnumType
-import jakarta.persistence.Enumerated
 import jakarta.persistence.GeneratedValue
 import jakarta.persistence.GenerationType
 import jakarta.persistence.Id
@@ -11,7 +9,8 @@ import java.time.LocalDateTime
 
 enum class BookStatus {
     BORROW,
-    RETURN
+    RETURN,
+    NEW
 }
 
 @Entity
@@ -20,11 +19,11 @@ data class BookEntity(
     @field:Id
     @field:GeneratedValue(strategy = GenerationType.IDENTITY)
     var id: Long? = null,
-    var title: String,
-    var author: String,
-    var isbn: String,
-    @field:Enumerated(EnumType.STRING)
-    var status: BookStatus,
+    var title: String?,
+    var author: String?,
+    var isbn: String?,
+    var bookStatus: String? = BookStatus.NEW.name,
+    var status: Boolean? = true,
     var createdAt: LocalDateTime = LocalDateTime.now(),
     var updatedAt: LocalDateTime = LocalDateTime.now()
 )
